@@ -1,0 +1,209 @@
+ [
+    {
+      "rackId": "Ippodromo Cesena",
+      "bikeId": "Bici 1",
+	  "delivered": true
+	},
+	{
+      "rackId": "Ippodromo Cesena",
+      "bikeId": "Bici 2",
+	  "delivered": true
+	},
+	{
+      "rackId": "Ippodromo Cesena",
+      "bikeId": "Bici 3",
+	  "delivered": true
+	},
+	{
+      "rackId": "Ippodromo Cesena",
+      "bikeId": "Bici 4",
+	  "delivered": true
+	},
+	{
+      "rackId": "Ippodromo Cesena",
+      "bikeId": "Bici 5",
+	  "delivered": true
+	},
+	
+	{
+      "rackId": "Orogel Stadium Dino Manuzzi",
+      "bikeId": "Bici 6",
+	  "delivered": true
+	},
+	{
+      "rackId": "Orogel Stadium Dino Manuzzi",
+      "bikeId": "Bici 7",
+	  "delivered": true
+	},
+	{
+      "rackId": "Orogel Stadium Dino Manuzzi",
+      "bikeId": "Bici 8",
+	  "delivered": true
+	},
+	{
+      "rackId": "Orogel Stadium Dino Manuzzi",
+      "bikeId": "Bici 9",
+	  "delivered": true
+	},
+	{
+      "rackId": "Orogel Stadium Dino Manuzzi",
+      "bikeId": "Bici 10",
+	  "delivered": true
+	},
+	
+	{
+      "rackId": "Cesena Rugby Club - Giovanili",
+      "bikeId": "Bici 11",
+	  "delivered": true
+	},
+	{
+      "rackId": "Cesena Rugby Club - Giovanili",
+      "bikeId": "Bici 12",
+	  "delivered": true
+	},
+	{
+      "rackId": "Cesena Rugby Club - Giovanili",
+      "bikeId": "Bici 13",
+	  "delivered": true
+	},
+	{
+      "rackId": "Cesena Rugby Club - Giovanili",
+      "bikeId": "Bici 14",
+	  "delivered": true
+	},
+	{
+      "rackId": "Cesena Rugby Club - Giovanili",
+      "bikeId": "Bici 15",
+	  "delivered": true
+	},
+	
+	{
+      "rackId": "Mad Cafè",
+      "bikeId": "Bici 16",
+	  "delivered": true
+	},
+	{
+      "rackId": "Mad Cafè",
+      "bikeId": "Bici 17",
+	  "delivered": true
+	},
+	{
+      "rackId": "Mad Cafè",
+      "bikeId": "Bici 18",
+	  "delivered": true
+	},
+	{
+      "rackId": "Mad Cafè",
+      "bikeId": "Bici 19",
+	  "delivered": true
+	},
+	{
+      "rackId": "Mad Cafè",
+      "bikeId": "Bici 20",
+	  "delivered": true
+	},
+
+	{
+      "rackId": "Rastrelliera Iper Coop Lungosavio, Cesena",
+      "bikeId": "Bici 21",
+	  "delivered": true
+	},
+	{
+      "rackId": "Rastrelliera Iper Coop Lungosavio, Cesena",
+      "bikeId": "Bici 22",
+	  "delivered": true
+	},
+	{
+      "rackId": "Rastrelliera Iper Coop Lungosavio, Cesena",
+      "bikeId": "Bici 23",
+	  "delivered": true
+	},
+	{
+      "rackId": "Rastrelliera Iper Coop Lungosavio, Cesena",
+      "bikeId": "Bici 24",
+	  "delivered": true
+	},
+	{
+      "rackId": "Rastrelliera Iper Coop Lungosavio, Cesena",
+      "bikeId": "Bici 25",
+	  "delivered": true
+	},
+	
+	{
+      "rackId": "Biblioteca Malatestiana",
+      "bikeId": "Bici 26",
+	  "delivered": true
+	},
+	{
+      "rackId": "Biblioteca Malatestiana",
+      "bikeId": "Bici 27",
+	  "delivered": true
+	},
+	{
+      "rackId": "Biblioteca Malatestiana",
+      "bikeId": "Bici 28",
+	  "delivered": true
+	},
+	{
+      "rackId": "Biblioteca Malatestiana",
+      "bikeId": "Bici 29",
+	  "delivered": true
+	},
+	{
+      "rackId": "Biblioteca Malatestiana",
+      "bikeId": "Bici 30",
+	  "delivered": true
+	},
+
+	{
+      "rackId": "Cimitero",
+      "bikeId": "Bici 31",
+	  "delivered": true
+	},
+	{
+      "rackId": "Cimitero",
+      "bikeId": "Bici 32",
+	  "delivered": true
+	},
+	{
+      "rackId": "Cimitero",
+      "bikeId": "Bici 33",
+	  "delivered": true
+	},
+	{
+      "rackId": "Cimitero",
+      "bikeId": "Bici 34",
+	  "delivered": true
+	},
+	{
+      "rackId": "Cimitero",
+      "bikeId": "Bici 35",
+	  "delivered": true
+	},
+	
+	{
+      "rackId": "Parco per Fabio",
+      "bikeId": "Bici 36",
+	  "delivered": true
+	},
+	{
+      "rackId": "Parco per Fabio",
+      "bikeId": "Bici 37",
+	  "delivered": true
+	},
+	{
+      "rackId": "Parco per Fabio",
+      "bikeId": "Bici 38",
+	  "delivered": true
+	},
+	{
+      "rackId": "Parco per Fabio",
+      "bikeId": "Bici 39",
+	  "delivered": true
+	},
+	{
+      "rackId": "Parco per Fabio",
+      "bikeId": "Bici 40",
+	  "delivered": true
+	}
+  ]

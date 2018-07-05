@@ -1,0 +1,19 @@
+.prev-orders {
+  border: 2px solid grey;
+  box-shadow: 4px 5px 10px #2695E6;
+  margin: 0 auto 1.2em auto;
+  padding: 0.5em 0 0.5em 0;
+  background: #fff;
+  border-radius: 10px;
+
+  h2 {
+    border-bottom: 2px solid #E4E4E4;
+    padding: 0 0.5em 0.25em 0.5em;
+    font-size: 1.2em;
+  }
+
+  p {
+    padding: 0 0.5em 0.25em 0.5em;
+    margin: 0;
+  }
+}

@@ -1,0 +1,45 @@
+.add-to-order-wrap {
+    display: inline-block;
+    float: right;
+    margin-right: 1em;
+    margin-top: -0.1em;
+
+    .add-to-order {
+        color: #fff;
+        background: #182edb;
+        margin-left: 1em;
+        border-radius: 3px;
+        font-size: 0.9em;
+        padding: 0.6em 0.9em;
+
+        &:hover {
+            cursor: pointer;
+            background: lighten(#3879D9, 7%);
+        }
+    }
+}
+
+.size, .quantity {
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0.2em 0.5em;
+    border-radius: 3px;
+    background: url('/img/down-arrow.png') no-repeat #F8F8F8;
+    font-size: 0.95em;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.size {
+    background-position: 85% 55%;
+    width: 4.5em;
+}
+
+.quantity {
+    background-position: 85% 55%;
+    width: 3.9em;
+}

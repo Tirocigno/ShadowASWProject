@@ -1,0 +1,20 @@
+.ba-order-details-container {
+    padding: 0.2em 0 0.75em 0;
+    border-top: 1px dotted #2695E5;
+
+    &:last-child {
+        padding-bottom: 0;
+    }
+
+    .item-name {
+        padding-right: 1em;
+        padding-left: 1em;
+        color: darken(#2695E5, 15%);
+        font-size: 0.9em;
+		 font-weight: bold;
+    }
+
+    .item-quantity {
+        font-size: 0.9em;
+    }
+}

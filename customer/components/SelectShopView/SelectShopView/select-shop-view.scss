@@ -1,0 +1,363 @@
+.select-shop-container {
+  margin-left: 0em;
+  margin-top: 4em;
+  // background: black;
+
+  h1 {
+    color: #333333;
+  }
+
+  .main-wrap {
+    min-height: 25em;
+
+    .loading-icon {
+      margin-top: 0em;
+      text-align: center;
+    }
+
+    .location-notification-container {
+      background: #fff;
+      max-width: 30em;
+      margin: 0 auto;
+      border: 1px solid #bebcbc;
+      border-radius: 3px;
+      padding: 1em;
+      text-align: center;
+
+      h2 {
+        color: darken(#999999, 15%);
+      }
+
+
+      .fa-location-arrow {
+        color: #40B284;
+      }
+    }
+  }
+
+  .userProgress {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    border: 1px solid #E4E4E4;
+
+    #oneOfFive {
+      position: absolute;
+      width: 20%;
+      height: 100%;
+      background: #182edb;
+      border-radius: 5px 0px 0px 5px;
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+  .select-shop-container {
+    .userProgress {
+      width: 25em;
+    }
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .select-shop-container {
+    margin-top: 0em;
+    margin-left: 5em;
+  }
+}
+
+
+
+
+
+
+
+
+
+/// consegnare
+
+
+.select-shop-container {
+
+#gifBike {
+  margin-left: 36%;
+  margin-bottom: 2%;
+  width: 30%;
+}
+
+  h1 {
+    margin-left: 2%;
+    color: #333333;
+  }
+
+
+
+
+
+
+  .main-wrap2 {
+
+
+    margin-left: -20%;
+
+    #racksSelect {
+      border: 2px solid blue;
+      margin-top: 2%;
+      margin-left: -4%;
+      width: 40%;
+    }
+
+    #buttonRacks {
+      margin-left: 0%;
+    }
+
+    p {
+      margin-left: -1%;
+    }
+
+    min-height: 25em;
+
+    .loading-icon {
+      margin-top: 0em;
+      text-align: center;
+    }
+
+    .location-notification-container {
+      background: #fff;
+      max-width: 30em;
+      margin: 0 auto;
+      border: 1px solid #bebcbc;
+      border-radius: 3px;
+      padding: 1em;
+      text-align: center;
+
+      h2 {
+        color: darken(#999999, 15%);
+      }
+
+
+      .fa-location-arrow {
+        color: #40B284;
+      }
+    }
+  }
+
+
+
+  .hide {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 377px) and (max-width: 450px) {
+  .select-shop-container {
+    .main-wrap2 {
+      select{
+        margin-left: -11%;
+      }
+      p {
+          margin-left: -10%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 374px) and (max-device-width: 376px) {
+  .select-shop-container {
+    .main-wrap2 {
+
+        margin-left: 15%;
+
+        #racksSelect {
+          margin-top: 2%;
+          margin-left: -7%;
+          width: 100%;
+        }
+      p {
+          margin-left: -2%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 413px) and (max-device-width: 415px) {
+  .select-shop-container {
+    .main-wrap2 {
+
+        margin-left: 15%;
+        #racksSelect {
+          margin-top: 2%;
+          margin-left: -7%;
+          width: 100%;
+        }
+      p {
+          margin-left: -2%;
+      }
+      #buttonRacks {
+        margin-left: 3%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 500px) {
+  .select-shop-container {
+    .main-wrap2 {
+        margin-left: 15%;
+      select{
+        width: 75%;
+        margin-left: 6%;
+      }
+      p {
+          margin-left: 8%;
+      }
+      button {
+        margin-left:10%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 319px) and (max-device-width: 321px) {
+  .select-shop-container {
+    .main-wrap2 {
+
+        margin-left: 15%;
+        #racksSelect {
+          margin-top: 2%;
+          margin-left: -7%;
+          width: 100%;
+        }
+      p {
+          margin-left: -4%;
+      }
+      #buttonRacks {
+        margin-left: -7%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 359px) and (max-device-width: 361px) {
+  .select-shop-container {
+    .main-wrap2 {
+
+        margin-left: 15%;
+        #racksSelect {
+          margin-top: 2%;
+          margin-left: -7%;
+          width: 100%;
+        }
+      p {
+          margin-left: -4%;
+      }
+      #buttonRacks {
+        margin-left: -1%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 410px) and (max-device-width: 412px) {
+  .select-shop-container {
+    .main-wrap2 {
+
+        margin-left: 15%;
+        #racksSelect {
+          margin-top: 2%;
+          margin-left: -7%;
+          width: 100%;
+        }
+      p {
+          margin-left: -4%;
+      }
+      #buttonRacks {
+        margin-left: 3%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 767px) and (max-device-width: 769px) {
+  .select-shop-container {
+    .main-wrap2 {
+
+        margin-left: 15%;
+        #racksSelect {
+          margin-top: 2%;
+          margin-left: -35%;
+          width: 100%;
+        }
+      p {
+          margin-left: -17%;
+      }
+      #buttonRacks {
+        margin-left: -15%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-device-width: 1023px) and (max-device-width: 1024px) {
+  .select-shop-container {
+    .main-wrap2 {
+
+        margin-left: 15%;
+        #racksSelect {
+          margin-top: 2%;
+          margin-left: -20%;
+          width: 70%;
+        }
+      p {
+          margin-left: -10%;
+      }
+      #buttonRacks {
+        margin-left: -8%;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-device-width: 736px) and (max-device-width: 813px) {
+  .select-shop-container {
+    .main-wrap2 {
+
+        margin-left: 15%;
+        #racksSelect {
+          margin-top: 2%;
+          margin-left: -20%;
+          width: 70%;
+        }
+      p {
+          margin-left: -15%;
+      }
+      #buttonRacks {
+        margin-left: -12%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .select-shop-container {
+    .main-wrap2 {
+      select{
+        margin-left: -3%;
+      }
+      p {
+
+      }
+      margin-left: 42%;
+    }
+  }
+}
