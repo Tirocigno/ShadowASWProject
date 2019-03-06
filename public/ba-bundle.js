@@ -28063,6 +28063,9 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	/**
+	 * Main della sezione Buisness Administrator
+	 */
 	var App = _react2.default.createClass({
 	    displayName: 'App',
 
@@ -28148,20 +28151,33 @@
 	    }
 	});
 
-	// takes app state as an argument, and whatever gets returned will show up as props inside BusinessAdminView
+	/**
+	 * Takes app state as an argument, and whatever gets returned will show up as props inside BusinessAdminView
+	 * @param state the app state.
+	 * @returns {{orders: (*|*)}}
+	 */
 	function mapStateToProps(state) {
 	    return {
 	        orders: state.orders
 	    };
 	}
 
-	// anything returned from this function will end up as props on the BusinessAdminView container
+	/**
+	 * Anything returned from this function will end up as props on the BusinessAdminView container
+	 * bindActionCreators and dispatch: takes whatever is returned from fetchOrders and makes sure it gets pushed to all the reducers
+	 * @param dispatch
+	 * @returns {{completeOrder: *, fetchOrders: fetchOrders}}
+	 */
+
 	function mapDispatchToProps(dispatch) {
-	    // bindActionCreators and dispatch: takes whatever is returned from fetchOrders and makes sure it gets pushed to all the reducers
 	    return (0, _redux.bindActionCreators)({ fetchOrders: _index.fetchOrders, completeOrder: _index.completeOrder }, dispatch);
 	}
 
-	// promote BusinessAdminView from component to container. It needs to know about this new dispatch method, fetchOrders. Make it available as a prop
+	/**
+	 *  Promote BusinessAdminView from component to container.
+	 *  It needs to know about this new dispatch method, fetchOrders. Make it available as a prop
+	 */
+
 	exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(BusinessAdminView);
 
 /***/ }),
@@ -28610,6 +28626,9 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	/**
+	 *Gestisce il container degli ordini.
+	 */
 	var OrdersContainer = _react2.default.createClass({
 	    displayName: 'OrdersContainer',
 
@@ -28619,6 +28638,11 @@
 	        completeOrder: _react2.default.PropTypes.func
 	    },
 
+	    /**
+	     * Se a Render viene passata una lista di orders, quest'ultima viene stampata a video.
+	     * Credo che venga richiamata dopo che i dati sono stati recuperati ma non ne sono sicurissimo
+	     * @returns {*}
+	     */
 	    render: function render() {
 
 	        if (this.props.orders === null) {
@@ -28738,8 +28762,9 @@
 	var BAOrder = _react2.default.createClass({
 	    displayName: 'BAOrder',
 
-
+	    //Usa propTypes per abilitare il typechecking
 	    propTypes: {
+	        //Oggetto di tipo ordine.
 	        order: _react2.default.PropTypes.shape({
 	            _id: _react2.default.PropTypes.string,
 	            date: _react2.default.PropTypes.string,
@@ -28747,12 +28772,18 @@
 	            items: _react2.default.PropTypes.arrayOf(_react2.default.PropTypes.shape({
 	                itemName: _react2.default.PropTypes.string
 	            })),
+	            //Tempo trascorso
 	            time: _react2.default.PropTypes.string,
+	            //Username di chi fa la prenotazione
 	            username: _react2.default.PropTypes.string,
+	            //Flag per indicare resituzione o meno.
 	            orderCompleted: _react2.default.PropTypes.bool
 	        })
 	    },
 
+	    /**
+	     * Proietta sulla mappa la posizione di una bicicletta.
+	     */
 	    trackBike: function trackBike() {
 	        var rand = Math.floor(Math.random() * 10);
 	        var coord = __webpack_require__(410);
@@ -28760,6 +28791,12 @@
 	        window.open(directions);
 	    },
 
+	    /**
+	     * Mette in uppercase il nome di un utente
+	     * @param username l'username dell'utente da manipolare
+	     * @returns {string} l'username con la prima lettera maiuscola
+	     * @private
+	     */
 	    _manipulateUsername: function _manipulateUsername(username) {
 	        var name = '';
 	        var i = void 0;
@@ -28775,6 +28812,10 @@
 	        return name;
 	    },
 
+	    /**
+	     * Funzione che resituisce lo scheletro della pagina
+	     * @returns {*} il codice HTML della pagina.
+	     */
 	    render: function render() {
 	        var orderDetails = this.props.order.items.map(function (item, i) {
 	            return _react2.default.createElement(_BAOrderDetails2.default, {
@@ -28893,6 +28934,9 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	/**
+	 * Fa più o meno la stessa cosa di BAOrders, ma gestisce solo i dettagli
+	 */
 	var BAOrderDetails = _react2.default.createClass({
 	    displayName: 'BAOrderDetails',
 
@@ -28980,6 +29024,9 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	/**
+	 * Gestisce il cronometro.
+	 */
 	var Timer = _react2.default.createClass({
 	    displayName: 'Timer',
 
@@ -64480,9 +64527,13 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+	//Costanti al singolo blocco, export serve per renderle visibili al momento dell'import del modulo.
 	var FETCH_ORDERS_SUCCESS = exports.FETCH_ORDERS_SUCCESS = 'FETCH_ORDERS_SUCCESS';
+	//Axios si occupa di gestire le richieste e permette di visualizzare la percentuale di completamento
+
 	var FETCH_ORDERS_ERROR = exports.FETCH_ORDERS_ERROR = 'FETCH_ORDERS_ERROR';
 
+	//Costrutto asincrono con callback(dispatch) chiamata alla fine.
 	var fetchOrders = exports.fetchOrders = function fetchOrders() {
 	  return function (dispatch) {
 	    _axios2.default.get('/api/orders').then(function (res) {

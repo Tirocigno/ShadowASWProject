@@ -1,4 +1,6 @@
+
 import React from 'react'
+import sass from './ba-order-details.scss'
 
 /**
  * Fa più o meno la stessa cosa di BAOrders, ma gestisce solo i dettagli
