@@ -1,13 +1,11 @@
 import React from 'react'
-import sass from './ba-order.scss'
 import BAOrderDetails from '../BAOrderDetails/BAOrderDetails'
-import Timer from '../Timer/Timer'
-import request from 'superagent';
 import am_pm_to_24_string from '../../../../formatHour'
 
 let BAOrder = React.createClass({
-
+//Usa propTypes per abilitare il typechecking
     propTypes: {
+        //Oggetto di tipo ordine.
         order: React.PropTypes.shape({
             _id: React.PropTypes.string,
             date: React.PropTypes.string,
@@ -15,12 +13,18 @@ let BAOrder = React.createClass({
             items: React.PropTypes.arrayOf(React.PropTypes.shape({
                 itemName: React.PropTypes.string,
             })),
+            //Tempo trascorso
             time: React.PropTypes.string,
+            //Username di chi fa la prenotazione
             username: React.PropTypes.string,
+            //Flag per indicare resituzione o meno.
             orderCompleted: React.PropTypes.bool
         }),
     },
 
+    /**
+     * Proietta sulla mappa la posizione di una bicicletta.
+     */
     trackBike: function () {
         let rand = Math.floor(Math.random() * (10));
         let coord = require('../../../../randomCoordinates.json');
@@ -28,6 +32,12 @@ let BAOrder = React.createClass({
         window.open(directions);
     },
 
+    /**
+     * Mette in uppercase il nome di un utente
+     * @param username l'username dell'utente da manipolare
+     * @returns {string} l'username con la prima lettera maiuscola
+     * @private
+     */
     _manipulateUsername: function (username) {
         let name = '';
         let i;
@@ -43,6 +53,10 @@ let BAOrder = React.createClass({
         return name;
     },
 
+    /**
+     * Funzione che resituisce lo scheletro della pagina
+     * @returns {*} il codice HTML della pagina.
+     */
     render: function () {
         let orderDetails = this.props.order.items.map(
             function (item, i) {
