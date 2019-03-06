@@ -1,5 +1,8 @@
+
+//Definisce schema e modello per gestire gli ordini tramite database
+
 let mongoose = require('mongoose');
-let Schema = mongoose.Schema;
+
 
 let orderSchema = mongoose.Schema({
     username: String,
