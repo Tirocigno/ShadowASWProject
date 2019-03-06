@@ -2,6 +2,9 @@ import React from 'react'
 import sass from './timer.scss'
 import moment from 'moment'
 
+/**
+ * Gestisce il cronometro.
+ */
 var Timer = React.createClass({
 
     propTypes: {
