@@ -1,8 +1,9 @@
 import React from 'react'
-import sass from './orders-container.scss'
 import BAOrder from '../BAOrder/BAOrder'
-import lodash from 'lodash'
 
+/**
+ *Gestisce il container degli ordini.
+ */
 var OrdersContainer = React.createClass({
 
     propTypes: {
@@ -13,6 +14,11 @@ var OrdersContainer = React.createClass({
         completeOrder: React.PropTypes.func
     },
 
+    /**
+     * Se a Render viene passata una lista di orders, quest'ultima viene stampata a video.
+     * Credo che venga richiamata dopo che i dati sono stati recuperati ma non ne sono sicurissimo
+     * @returns {*}
+     */
     render: function() {
 
         if (this.props.orders === null) {
