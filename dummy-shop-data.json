@@ -30,6 +30,40 @@
     "vicinity": "Via Niccolo Machiavelli, 200",
     "html_attributions": []
   },
+
+  {
+    "geometry": {
+      "location": {
+        "lat": 44.145367,
+        "lng": 12.226925
+      },
+      "viewport": {
+        "south": 37.7753711197085,
+        "west": -122.42613463029147,
+        "north": 37.77806908029149,
+        "east": -122.42343666970851
+      }
+    },
+    "id": "9a7febec4d42a6dd9f97a576f9b00499bb02cfe6",
+    "name": "Campus Universitario, Forlì",
+    "nameAlt": "Campus Forlì",
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://goo.gl/maps/FGJC21yhgn42\">Rastrelliera Ippodromo Cesena</a>"
+        ],
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJL3s1mo5XKxMRfVJDHoT-LGI",
+    "reference": "CmRSAAAAKto8w-MUc3NBILgyZdAxBlPueV2EC-CnuHXfZxjPYjbnjilES7ZpC0WsuW3GKbn9IfteViuQfQRJpyAFyTeqH8eGtYjJQBUti0Ge9neJeqpu4O0yjUEbftqvPzJj6PJZEhANGT3ThZ7f_JeDYOzFd7t5GhTuvVqvo3BpknjxOzlZXvz34CNblA",
+    "scope": "https://www.google.it/maps/dir/''/ippodromo+cesena/data=!4m5!4m4!1m0!1m2!1m1!1s0x132ca4c206ae337f:0x915dce2a7a569b9?sa=X&ved=0ahUKEwiRvZ2hjvbbAhWsKJoKHbK1BYQQ9RcIogEwDg",
+    "vicinity": "Via Niccolo Machiavelli, 200",
+    "html_attributions": []
+  },
+
+
   {
     "geometry": {
       "location": {
