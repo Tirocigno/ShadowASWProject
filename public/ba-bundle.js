@@ -28554,7 +28554,12 @@
 	            _react2.default.createElement(
 	                'div',
 	                { className: 'nav-icons' },
-	                _react2.default.createElement('a', { className: 'fa fa-sign-out fa-2x', 'aria-hidden': 'true', href: "/select-shop" })
+	                _react2.default.createElement('a', { className: 'fa fa-sign-out fa-2x', 'aria-hidden': 'true', href: "/select-shop" }),
+	                _react2.default.createElement(
+	                    'p',
+	                    null,
+	                    'Qui c\'\xE8 il contenuto di NAV'
+	                )
 	            )
 	        );
 	    }
@@ -28828,7 +28833,7 @@
 	            /*return <BAOrderDetails
 	                key={i}
 	                item={item}/>*/
-	            return _react2.default.createElement(_Pippo.Goofy, null);
+	            //return <Goofy />
 	        });
 
 	        return _react2.default.createElement(
@@ -47427,7 +47432,7 @@
 	    }
 	});
 
-	//Così posso esportare con le parentesi graffe.
+	//Così posso esportare con le parentesi graffe, altrimenti devo esportare senza
 	module.exports = {
 	    Goofy: Goofy
 	};

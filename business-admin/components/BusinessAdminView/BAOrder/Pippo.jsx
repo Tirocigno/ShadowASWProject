@@ -7,7 +7,7 @@ let Goofy = React.createClass({
     }
 });
 
-//Così posso esportare con le parentesi graffe.
+//Così posso esportare con le parentesi graffe, altrimenti devo esportare senza
 module.exports = {
     Goofy
 };

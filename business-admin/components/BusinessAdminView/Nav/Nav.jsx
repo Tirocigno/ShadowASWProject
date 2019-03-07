@@ -1,5 +1,6 @@
-
-
+/**
+ * Rappresenta la barra di navigazione al top dello schermo
+ */
 import React from 'react'
 import sass from './nav.scss'
 
