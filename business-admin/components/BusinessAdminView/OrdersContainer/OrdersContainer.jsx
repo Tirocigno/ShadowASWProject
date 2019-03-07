@@ -3,6 +3,7 @@ import React from 'react'
 import sass from './orders-container.scss'
 import BAOrder from '../BAOrder/BAOrder'
 import lodash from 'lodash'
+import {Goofy} from '../BAOrder/Pippo'
 
 /**
  *Gestisce il container degli ordini.
@@ -32,28 +33,30 @@ var OrdersContainer = React.createClass({
                 </div>
             )
         } else {
-            var filteredOrders = this.props.orders.filter(
+            let ordersArray = this.props.orders.filter(
                 function(order) {
                     return order;
                 }
             )
 
-              var orders = filteredOrders.map(
+            let ordersHTMLElements = ordersArray.map(
                 function(order) {
 
-                    return <BAOrder
+                   return <BAOrder
                                 key={order._id}
                                 order={order}/>
+                   // return <Goofy/>;
+                   // return <p> Perchè il mio componente non va? </p>
             }, this);
 
-            if (orders.length > 0) {
+            if (ordersHTMLElements.length > 0) {
                 return (
                     <div className="ba-orders-container">
-                        {orders}
+                        {ordersHTMLElements}
                     </div>
                 )
             }
-            else if (orders.length === 0) {
+            else if (ordersHTMLElements.length === 0) {
                 return (
                     <div className="no-orders">Nessuna bicicletta utilizzata</div>
                 )

@@ -28624,6 +28624,8 @@
 
 	var _lodash2 = _interopRequireDefault(_lodash);
 
+	var _Pippo = __webpack_require__(410);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	/**
@@ -28657,24 +28659,26 @@
 	                )
 	            );
 	        } else {
-	            var filteredOrders = this.props.orders.filter(function (order) {
+	            var ordersArray = this.props.orders.filter(function (order) {
 	                return order;
 	            });
 
-	            var orders = filteredOrders.map(function (order) {
+	            var ordersHTMLElements = ordersArray.map(function (order) {
 
 	                return _react2.default.createElement(_BAOrder2.default, {
 	                    key: order._id,
 	                    order: order });
+	                // return <Goofy/>;
+	                // return <p> Perchè il mio componente non va? </p>
 	            }, this);
 
-	            if (orders.length > 0) {
+	            if (ordersHTMLElements.length > 0) {
 	                return _react2.default.createElement(
 	                    'div',
 	                    { className: 'ba-orders-container' },
-	                    orders
+	                    ordersHTMLElements
 	                );
-	            } else if (orders.length === 0) {
+	            } else if (ordersHTMLElements.length === 0) {
 	                return _react2.default.createElement(
 	                    'div',
 	                    { className: 'no-orders' },
@@ -28759,8 +28763,6 @@
 
 	var _Pippo = __webpack_require__(410);
 
-	var _Pippo2 = _interopRequireDefault(_Pippo);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var BAOrder = _react2.default.createClass({
@@ -28821,11 +28823,12 @@
 	     * @returns {*} il codice HTML della pagina.
 	     */
 	    render: function render() {
-	        var orderDetails = this.props.order.items.map(function (item, i) {
+	        var orderDetails = void 0;
+	        orderDetails = this.props.order.items.map(function (item, i) {
 	            /*return <BAOrderDetails
 	                key={i}
 	                item={item}/>*/
-	            return _Pippo2.default;
+	            return _react2.default.createElement(_Pippo.Goofy, null);
 	        });
 
 	        return _react2.default.createElement(
@@ -47411,24 +47414,23 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var goofy = _react2.default.createClass({
-	    displayName: 'goofy',
+	var Goofy = _react2.default.createClass({
+	    displayName: 'Goofy',
 
 
 	    render: function render() {
 	        return _react2.default.createElement(
-	            'div',
+	            'p',
 	            null,
-	            _react2.default.createElement(
-	                'p',
-	                null,
-	                ' Somebody come quick'
-	            )
+	            ' Somebody come quick'
 	        );
 	    }
 	});
 
-	module.exports = goofy;
+	//Così posso esportare con le parentesi graffe.
+	module.exports = {
+	    Goofy: Goofy
+	};
 
 /***/ }),
 /* 411 */

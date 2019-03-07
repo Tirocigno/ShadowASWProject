@@ -4,7 +4,8 @@ import BAOrderDetails from '../BAOrderDetails/BAOrderDetails'
 import Timer from '../Timer/Timer'
 import request from 'superagent';
 import am_pm_to_24_string from '../../../../formatHour'
-import Goofy from './Pippo'
+import {Goofy} from './Pippo'
+
 
 let BAOrder = React.createClass({
 //Usa propTypes per abilitare il typechecking
@@ -65,10 +66,10 @@ let BAOrder = React.createClass({
         let orderDetails;
         orderDetails = this.props.order.items.map(
             function (item, i) {
-                return <BAOrderDetails
+                /*return <BAOrderDetails
                     key={i}
-                    item={item}/>
-
+                    item={item}/>*/
+                //return <Goofy />
             });
 
         return (
